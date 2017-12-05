@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { CounterService } from './services/counter.service';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +9,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  constructor(private counterThang: CounterService) { }
 }
