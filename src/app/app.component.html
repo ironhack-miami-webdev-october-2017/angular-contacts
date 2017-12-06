@@ -1,14 +1,18 @@
 <header>
   <h1> Angular Services </h1>
   <p> Current Count: {{ counterThang.count }} </p>
+
+  <nav>
+    <a href="/"> Home (page refresh) </a>
+
+    <a routerLink="/"> Home </a>
+    <a routerLink="/counter"> Counter </a>
+    <a routerLink="/contacts"> Contacts </a>
+  </nav>
 </header>
 
 
-<app-counter-ui></app-counter-ui>
-
-<hr />
-
-<app-contact-list></app-contact-list>
+<router-outlet></router-outlet>
 
 
 <footer>

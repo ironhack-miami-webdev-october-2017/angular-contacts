@@ -4,5 +4,8 @@
   <b> ID: {{ contactInfo.id }} </b>
   <br />
 
+  <!-- <a routerLink="/contacts/{{ contactInfo.id }}"> See Details </a> -->
+  <a [routerLink]="['/contacts', contactInfo.id ]"> See Details </a>
+
   <button (click)="deleteContactClick()"> Delete </button>
 </div>
